@@ -8,7 +8,6 @@ const Categories = () => {
         const fetchCategories = async () => {
             const response = await fetch('https://fakestoreapi.com/products/categories');
             const data = await response.json();
-            console.log('data==', data);
             setCategories(data);
         }
 
